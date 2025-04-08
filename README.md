@@ -36,9 +36,10 @@ npm install
 | Method | Endpoint                                  | Description |
 |--------|-------------------------------------------|-------------|
 | POST   | `/api/scrapping-device-structure-data`    | Scrapes structured device specifications from GSM Arena. 
-| POST   | `/api/scrapping-device-unstructure-data`  | Scrapes unstructured device data like meta info, raw HTML blocks, etc. <br><br>
+| POST   | `/api/scrapping-device-unstructure-data`  | Scrapes unstructured device data like meta info, raw HTML blocks, etc. 
+| POST   | `/api/scrapping-all-brands`  | Scrapes All Brands<br><br>
 
-<details><summary>Example (curl)</summary>
+<details><summary>Get Structure Device (curl)</summary>
 
 ```bash
 curl --location 'http://localhost:3000/api/scrapping-device-structure-data' \
@@ -52,7 +53,7 @@ curl --location 'http://localhost:3000/api/scrapping-device-structure-data' \
 </details>
 
 
- <details><summary>Example (curl)</summary>
+ <details><summary>Get UnStructure Device (curl)</summary>
 
 ```bash
 curl --location 'http://localhost:3000/api/scrapping-device-unstructure-data' \
@@ -65,6 +66,14 @@ curl --location 'http://localhost:3000/api/scrapping-device-unstructure-data' \
 ```
 </details>
 
+
+ <details><summary>All Brands (curl)</summary>
+
+```bash
+curl --location 'http://localhost:3000/api/scrapping-all-brands' \
+--header 'Cookie: connect.sid=s%3AQjXLvy2H6mbDNhWUOGEviZlaD7plZg8W.vqUz8yLGfFpwtGGyb0UY6htApQH2NdgSAHClF7cKp9Q'
+```
+</details>
 
 ---
 
