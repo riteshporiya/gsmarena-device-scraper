@@ -1,4 +1,5 @@
 import { grabDeviceHTML } from '../services/scrapping.service.js';
+import { scrapeGSMArenaBrands } from '../services/scrapping.brands.service.js';
 
 export const scrappingDeviceUnstructureData = async (req, res, next) => {
   try {
@@ -26,3 +27,15 @@ export const scrappingDeviceStructureData = async (req, res, next) => {
     next(error);
   }
 };
+
+export const scrappingAllBrands = async (req, res, next) => {
+  try {
+    const data = await scrapeGSMArenaBrands();
+    res.json({
+      data,
+      message: "Scrap all Brands successfully",
+    });
+  } catch (error) {
+    next(error);
+  }
+}
