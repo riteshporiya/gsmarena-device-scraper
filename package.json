@@ -1,0 +1,28 @@
+{
+  "name": "express-scrapping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A web scraping application using Express.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^5.1.0",
+    "form-data": "^4.0.2",
+    "node-html-parser": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.0"
+  }
+}
